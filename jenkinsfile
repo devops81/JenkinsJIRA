@@ -11,7 +11,7 @@ pipeline {
    
 			post {
 				always {
-					jiraSendBuildInfo site: 'devops81.atlassian.net'
+					jiraSendBuildInfo branch: 'main', site: 'devops81.atlassian.net'
 						}
 				  }
 
